@@ -12,7 +12,6 @@
     "babel-loader": "^8.2.3",
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
-    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
@@ -37,8 +36,6 @@
   "scripts": {
     "dev": "gulp --dev",
     "build": "gulp --build",
-    "predeploy": "gulp --build",
-    "deploy": "gh-pages -d build",
     "prettier": "prettier --write **/*.{js,jsx,ts,tsx,json,html,css,scss}"
   }
 }
