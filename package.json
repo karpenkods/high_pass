@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "PixelPerfect верстка по макету Figma с применением grid css",
   "main": "index.js",
-  "repository": "https://karpenkods.github.io/high_pass/",
+  "repository": "https://github.com/karpenkods/high_pass/",
   "homepage": "https://karpenkods.github.io/high_pass/dist/index.html",
   "license": "ISC",
   "devDependencies": {
