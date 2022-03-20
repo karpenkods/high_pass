@@ -4,7 +4,7 @@ const htmlmin = require('gulp-htmlmin')
 const autoprefixer = require('gulp-autoprefixer')
 const cleanCSS = require('gulp-clean-css')
 const imageMin = require('gulp-imagemin')
-const svgSprite = require('gulp-svg-sprite');
+const svgSprite = require('gulp-svg-sprite')
 const babel = require('gulp-babel')
 const uglify = require('gulp-uglify-es').default
 const notify = require('gulp-notify')
@@ -90,13 +90,15 @@ const images = () => {
 
 const svgSprites = () => {
   return src('src/images/svg/**/*.svg')
-    .pipe(svgSprite({
-      mode: {
-        stack: {
-          sprite: '../sprite.svg'
-        }
-      }
-    }))
+    .pipe(
+      svgSprite({
+        mode: {
+          stack: {
+            sprite: '../sprite.svg',
+          },
+        },
+      }),
+    )
     .pipe(dest('dist/images'))
 }
 
@@ -139,7 +141,7 @@ watch(
   ['src/images/**/*.jpg', 'src/images/**/*.webp', 'src/images/**/*.png', 'src/images/*.svg'],
   images,
 )
-watch('src/images/svg/**/*.svg', svgSprites);
+watch('src/images/svg/**/*.svg', svgSprites)
 watch('src/js/**/*.js', scripts)
 watch('src/resources/**', resources)
 watch(['src/fonts/*.woff', 'src/fonts/*.woff2'], fonts)
