@@ -1,15 +1,11 @@
-## PixelPerfect верстка по макету Figma с применением grid css
+## _Сайт-лендинг фотостудии_	
 
+#### PixelPerfect верстка по макету Figma с применением grid css
+***
+* ##### Стек:
+  * Pug
+  * Scss
+  * JS
+  * Gulp
+***
 Сайт: https://karpenkods.github.io/high_pass/dist/index.html
-
-npm install - установка зависимостей;
-
-npm run dev - версия для разработки; 
-
-npm run build - продакшн версия; 
-
-
-* Pug
-* Scss
-* JS
-* Gulp
